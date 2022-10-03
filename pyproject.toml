@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "e2e-tests-behave"
+version = "0.1.0"
+description = ""
+authors = ["sergeeond <sergey.egorov@eond.eu>"]
+readme = "README.md"
+packages = [{include = "e2e_tests_behave"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+behave = "^1.2.6"
+pytest-playwright = "^0.3.0"
+pytest-bdd = "^6.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
